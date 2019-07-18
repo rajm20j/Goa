@@ -2,6 +2,267 @@
     <string name="app_name">metroApp</string>
 
     <string-array name="stations">
-        <item></item>
+        <item>Shaheed Sthal(New Bus Adda)</item>
+        <item>Hindon</item>
+        <item>Arthala</item>
+        <item>Mohan Nagar</item>
+        <item>Shyam park</item>
+        <item>Major Mohit Sharma</item>
+        <item>Raj Bagh</item>
+        <item>Shaheed Nagar</item>
+        <item>Dilshad Garden</item>
+        <item>Jhil Mil</item>
+        <item>Mansarovar Park</item>
+        <item>Shahdara</item>
+        <item>Seelampur</item>
+        <item>Shastri Park</item>
+        <item>Tis Hazari</item>
+        <item>Pul Bangash</item>
+        <item>Pratap Nagar</item>
+        <item>Shastri Nagar</item>
+        <item>Kanhaiya Nagar</item>
+        <item>Keshav Puram</item>
+        <item>Kohat Enclave</item>
+        <item>Pitam Pura</item>
+        <item>Rohini East</item>
+        <item>Rohini West</item>
+        <item>Rithala</item>
+        <item>Samaypur Badli</item>
+        <item>Rohini Sector 18,19</item>
+        <item>Haiderpur Badli Mor</item>
+        <item>Jahangirpuri</item>
+        <item>Adarsh Nagar</item>
+        <item>Model Town</item>
+        <item>G.T.B. Nagar</item>
+        <item>Vishwavidyalaya</item>
+        <item>Vidhan Sabha</item>
+        <item>Civil Lines</item>
+        <item>Chandni Chowk</item>
+        <item>Chawri Bazar</item>
+        <item>New Delhi</item>
+        <item>Patel Chowk</item>
+        <item>Udyog Bhawan</item>
+        <item>Lok Kalyan Marg</item>
+        <item>Jorbagh</item>
+        <item>AIIMS</item>
+        <item>Green Park</item>
+        <item>Malviya Nagar</item>
+        <item>Saket</item>
+        <item>Qutab Minar</item>
+        <item>Chhattarpur</item>
+        <item>Sultanpur</item>
+        <item>Ghitorni</item>
+        <item>Arjan Garh</item>
+        <item>Guru Dronacharya</item>
+        <item>Sikandarpur</item>
+        <item>MG Road</item>
+        <item>IFFCO Chowk</item>
+        <item>Huda City Centre</item>
+        <item>Dwarka Sector 21</item>
+        <item>Dwarka Sector 8</item>
+        <item>Dwarka Sector 9</item>
+        <item>Dwarka Sector 10</item>
+        <item>Dwarka Sector 11</item>
+        <item>Dwarka Sector 12</item>
+        <item>Dwarka Sector 13</item>
+        <item>Dwarka Sector 14</item>
+        <item>Dwarka</item>
+        <item>Dwarka Mor</item>
+        <item>Nawada</item>
+        <item>Uttam Nagar West</item>
+        <item>Uttam Nagar East</item>
+        <item>Janak Puri East</item>
+        <item>Tilak Nagar</item>
+        <item>Subhash Nagar</item>
+        <item>Tagore Garden</item>
+        <item>Ramesh Nagar</item>
+        <item>Moti Nagar</item>
+        <item>Shadipur</item>
+        <item>Patel Nagar</item>
+        <item>Rajendra Place</item>
+        <item>Karol Bagh</item>
+        <item>Jhandewalan</item>
+        <item>R K Ashram Marg</item>
+        <item>Rajiv Chowk</item>
+        <item>Barakhamba</item>
+        <item>Pragati Maidan</item>
+        <item>Indraprastha</item>
+        <item>Akshardham</item>
+        <item>Mayur Vihar Extention</item>
+        <item>New Ashok Nagar</item>
+        <item>Noida Sector 15</item>
+        <item>Noida Sector 16</item>
+        <item>Noida Sector 18</item>
+        <item>Golf Course</item>
+        <item>Noida City Center</item>
+        <item>Noida Sector 34</item>
+        <item>Noida Sector 52</item>
+        <item>Noida Sector 61</item>
+        <item>Noida Sector 59</item>
+        <item>Noida Sector 62</item>
+        <item>Noida Electronic City</item>
+        <item>New Delhi-Airport Express</item>
+        <item>Shivaji Stadium</item>
+        <item>Dhaula Kuan</item>
+        <item>Delhi Aero City</item>
+        <item>IGI Airport</item>
+        <item>Dwarka Sec-21-Airport</item>
+        <item>Inder Lok</item>
+        <item>Punjabi Bagh</item>
+        <item>Shivaji Park</item>
+        <item>Madi Pur</item>
+        <item>Paschim Vihar (East)</item>
+        <item>Paschim Vihar (West)</item>
+        <item>Peera Garhi</item>
+        <item>Udyog Nagar</item>
+        <item>Surajmal Stadium</item>
+        <item>Nangloi</item>
+        <item>Nangloi Rly Station</item>
+        <item>Rajdhani Park</item>
+        <item>Mundka</item>
+        <item>Mundka Industrial Area (MIA)</item>
+        <item>Ghevra Metro station</item>
+        <item>Tikri Kalan</item>
+        <item>Tikri Border</item>
+        <item>Pandit Shree Ram Sharma</item>
+        <item>Bahdurgarh City</item>
+        <item>Brig Hoshiar Singh</item>
+        <item>Sector 55-66</item>
+        <item>Sector 54 Chowk</item>
+        <item>Sector 53-54</item>
+        <item>Sector 42-43</item>
+        <item>DLF Phase 1</item>
+        <item>Sikandarpur (Rapid Metro)</item>
+        <item>DLF Phase 2</item>
+        <item>Vodaphone Belvedere Towers</item>
+        <item>Indus Bank Cyber City</item>
+        <item>Micromax Moulsari</item>
+        <item>DLF Phase 3</item>
+        <item>Kashmere Gate</item>
+        <item>Lal Quila</item>
+        <item>Jama Masjid</item>
+        <item>Delhi Gate</item>
+        <item>ITO</item>
+        <item>Mandi House</item>
+        <item>Janpath</item>
+        <item>Central Secretariat</item>
+        <item>Khan Market</item>
+        <item>Jawaharlal Nehru Stadium</item>
+        <item>Jangpura</item>
+        <item>Moolchand</item>
+        <item>Kailash Colony</item>
+        <item>Nehru Place</item>
+        <item>Govind Puri</item>
+        <item>Okhla</item>
+        <item>Jasola</item>
+        <item>Sarita Vihar</item>
+        <item>Mohan Estate</item>
+        <item>Tughlakabad</item>
+        <item>Badarpur</item>
+        <item>Sarai</item>
+        <item>N.H.P.C. Chowk</item>
+        <item>Mewala Maharajpur</item>
+        <item>Sector 28 Faridabad</item>
+        <item>Badkal Mor</item>
+        <item>Old Faridabad</item>
+        <item>Neelam Chowk Ajronda</item>
+        <item>Bata Chowk</item>
+        <item>Escorts Mujesar</item>
+        <item>Sant Surdas - Sihi</item>
+        <item>Raja Nahar Singh</item>
+        <item>Janak Puri West</item>
+        <item>Dabri Mor</item>
+        <item>Dashrath Puri</item>
+        <item>Palam</item>
+        <item>Sadar Bazaar Cantonment</item>
+        <item>Terminal 1 IGI Airport</item>
+        <item>Shankar Vihar</item>
+        <item>Vasant Vihar</item>
+        <item>Munirka</item>
+        <item>R.K Puram</item>
+        <item>IIT Delhi</item>
+        <item>Hauz Khas</item>
+        <item>Panchsheel Park</item>
+        <item>Chirag Delhi</item>
+        <item>Greater Kailash</item>
+        <item>Nehru Enclave</item>
+        <item>Kalkaji Mandir</item>
+        <item>Okhla N.S.I.C</item>
+        <item>Sukhdev Vihar</item>
+        <item>Jamia Millia Islamia</item>
+        <item>Okhla Vihar</item>
+        <item>Jasola Vihar Shaheen Bagh</item>
+        <item>Kalindi Kunj</item>
+        <item>Okhla Bird Sanctuary</item>
+        <item>Botanical Garden</item>
+        <item>Majlis Park</item>
+        <item>Azadpur</item>
+        <item>Shalimar Bagh</item>
+        <item>Netaji Subhash Place</item>
+        <item>Shakurpur</item>
+        <item>Punjabi Bagh West</item>
+        <item>ESI Hospital</item>
+        <item>Rajouri Garden</item>
+        <item>Maya Puri</item>
+        <item>Naraina Vihar</item>
+        <item>Delhi Cantt</item>
+        <item>Durgabai Deshmukh South Campus</item>
+        <item>Sir Vishweshwaraiah Moti Bagh</item>
+        <item>Bhikaji Cama Place</item>
+        <item>Sarojini Nagar</item>
+        <item>INA</item>
+        <item>South Extension</item>
+        <item>Lajpat Nagar</item>
+        <item>Vinobapuri</item>
+        <item>Ashram</item>
+        <item>Hazrat Nizamuddin</item>
+        <item>Mayur Vihar Phase-1</item>
+        <item>Mayur Vihar Pocket I</item>
+        <item>Trilokpuri Sanjay Lake</item>
+        <item>Vinod Nagar East</item>
+        <item>Mandawali - West Vinod Nagar</item>
+        <item>IP Extension</item>
+        <item>Karkarduma Court</item>
+        <item>Krishna Nagar</item>
+        <item>East Azad Nagar</item>
+        <item>Welcome</item>
+        <item>Jaffrabad</item>
+        <item>Maujpur</item>
+        <item>Gokulpuri</item>
+        <item>Johri Enclave</item>
+        <item>Shiv Vihar</item>
+        <item>Yamuna Bank</item>
+        <item>Laxmi Nagar</item>
+        <item>Nirman Vihar</item>
+        <item>Preet Vihar</item>
+        <item>Karkar Duma</item>
+        <item>Anand Vihar</item>
+        <item>Kaushambi</item>
+        <item>Vaishali</item>
+        <item>Ashok Park Main</item>
+        <item>Satguru Ram Singh Marg</item>
+        <item>Kirti Nagar</item>
+        <item>Station</item>
+        <item>Noida Sector 51</item>
+        <item>Noida Sector 50</item>
+        <item>Noida Sector 76</item>
+        <item>Noida Sector 101</item>
+        <item>Noida Sector 81</item>
+        <item>NSEZ Noida</item>
+        <item>Noida Sector 83</item>
+        <item>Noida Sector 137</item>
+        <item>Noida Sector 142</item>
+        <item>Noida Sector 143</item>
+        <item>Noida Sector 144</item>
+        <item>Noida Sector 145</item>
+        <item>Noida Sector 146</item>
+        <item>Noida Sector 147</item>
+        <item>Noida Sector 148</item>
+        <item>Knowledge Park II</item>
+        <item>Pari Chowk Greater Noida</item>
+        <item>Alpha 1 Greater Noida</item>
+        <item>Delta 1 Greater Noida</item>
+        <item>GNIDA Office</item>
+        <item>Depot Greater Noida</item>
     </string-array>
 </resources>
