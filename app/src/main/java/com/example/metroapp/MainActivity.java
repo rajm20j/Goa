@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
 
         String[] stations=  getResources().getStringArray(R.array.stations);
 
-        AutoCompleteTextView src = findViewById(R.id.srchome);
+        AutoCompleteTextView src = findViewById(R.id.main_src);
         ArrayAdapter<String> srcadapter = new ArrayAdapter<String>( this, android.R.layout.simple_list_item_1, stations);
         src.setAdapter(srcadapter);
 
-        AutoCompleteTextView dest = findViewById(R.id.desthome);
+        AutoCompleteTextView dest = findViewById(R.id.main_dest);
         ArrayAdapter<String> destadapter = new ArrayAdapter<String>( this, android.R.layout.simple_list_item_1, stations);
         dest.setAdapter(destadapter);
     }

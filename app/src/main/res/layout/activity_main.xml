@@ -10,7 +10,8 @@
 
     <AutoCompleteTextView
 
-        android:id="@+id/srchome"
+        android:layout_marginTop="40dp"
+        android:id="@+id/main_src"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Source"
@@ -20,13 +21,58 @@
 
     <AutoCompleteTextView
 
-        android:id="@+id/desthome"
+        android:layout_marginTop="10dp"
+        android:id="@+id/main_dest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Destination"
         android:completionThreshold="1"
         />
 
+    <Button
+        android:id="@+id/main_route"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Route" />
 
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageButton
+
+        android:id="@+id/main_map"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageButton
+        android:id="@+id/main_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_background" />
+    </LinearLayout>
+    <AutoCompleteTextView
+
+        android:id="@+id/main_nearby"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nearby"
+        android:completionThreshold="1"
+        />
+
+    <AutoCompleteTextView
+
+        android:id="@+id/main_eatingoutlets"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Eating Outlets" />
 
 </LinearLayout>
