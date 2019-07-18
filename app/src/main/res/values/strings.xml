@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">metroApp</string>
+
+    <string-array name="stations">
+        <item></item>
+    </string-array>
 </resources>
