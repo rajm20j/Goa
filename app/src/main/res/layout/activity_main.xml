@@ -31,9 +31,9 @@
 
     <Button
         android:id="@+id/main_route"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Route" />
 
     <LinearLayout
@@ -56,15 +56,16 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_launcher_background" />
     </LinearLayout>
+
+
     <AutoCompleteTextView
 
         android:id="@+id/main_nearby"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nearby"
+        android:layout_marginTop="10dp"
         android:completionThreshold="1"
-        />
+        android:hint="Nearby" />
 
     <AutoCompleteTextView
 
@@ -74,5 +75,6 @@
         android:layout_height="wrap_content"
         android:completionThreshold="1"
         android:hint="Eating Outlets" />
+
 
 </LinearLayout>
