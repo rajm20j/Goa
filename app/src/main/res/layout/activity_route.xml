@@ -5,22 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".RouteActivity"
     android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/testsrcint"
+        android:layout_height="100dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/test1"/>
 
-    <TextView
-        android:id="@+id/route_src"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
-
-    <TextView
-        android:id="@+id/route_dest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

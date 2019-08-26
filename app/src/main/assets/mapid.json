@@ -1,0 +1,71 @@
+{
+	"map_id": [{
+			"Stations": "Vaishali",
+			"ID": "11"
+		},
+		{
+			"Stations": "Lakshmi nagar",
+			"ID": "12"
+		},
+		{
+			"Stations": "Mandi House",
+			"ID": "13"
+		},
+		{
+			"Stations": "Rajiv Chowk",
+			"ID": "14"
+		},
+		{
+			"Stations": "Janakpuri",
+			"ID": "15"
+		},
+		{
+			"Stations": "Dwarka",
+			"ID": "16"
+		},
+		{
+			"Stations": "Badarpur",
+			"ID": "21"
+		},
+		{
+			"Stations": "Nehru place",
+			"ID": "22"
+		},
+		{
+			"Stations": "Kashmiri Gate",
+			"ID": "23"
+		},
+		{
+			"Stations": "Jahangirpuri",
+			"ID": "31"
+		},
+		{
+			"Stations": "AIIMS",
+			"ID": "32"
+		},
+		{
+			"Stations": "I.N.A",
+			"ID": "33"
+		},
+		{
+			"Stations": "Haus Khas",
+			"ID": "34"
+		},
+		{
+			"Stations": "Rithala",
+			"ID": "41"
+		},
+		{
+			"Stations": "Rohini",
+			"ID": "42"
+		},
+		{
+			"Stations": "Welcome",
+			"ID": "43"
+		},
+		{
+			"Stations": "Dilshad Garden",
+			"ID": "44"
+		}
+	]
+}
