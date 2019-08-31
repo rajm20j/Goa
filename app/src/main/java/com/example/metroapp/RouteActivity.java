@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -115,6 +117,12 @@ public class RouteActivity extends AppCompatActivity {
         }
 
         g.findpath(srcint,destint,shortestDist,finalPath);
+        EditText t1 = (EditText) findViewById(R.id.testsrcint);
+        String path="";
+        for(int i=0;i<finalPath.size();i++){
+            path+=" "+Integer.toString(finalPath.get(i));
+        }
+        t1.setText(path);
 
 
 
@@ -196,13 +204,7 @@ public class RouteActivity extends AppCompatActivity {
                 int v1 = 0;
 
 
-                //INCLUDE PATH STORING HERE
-                //EditText test = (EditText) findViewById(R.id.testsrcint);
-                //String path="";
-                //for (int i =0; i<localPathList.size(); i++){
-                //    path = path + " " + Integer.toString(localPathList.get(i));
-                //}
-                //test.setText(path);
+
 
                 try {
                     JSONObject obj = new JSONObject(loadJSONFromAsset("newmap.json"));
@@ -215,21 +217,38 @@ public class RouteActivity extends AppCompatActivity {
                             // create a JSONObject for fetching single user data
 
                             JSONObject stationDetail = edgeArray.getJSONObject(i);
+                            if(Integer.parseInt(stationDetail.getString("Start"))==u1 && Integer.parseInt(stationDetail.getString("End"))==v1) {
+                                temp += Double.parseDouble(stationDetail.getString("Distance"));
+                                while (Integer.parseInt(edgeArray.getJSONObject(i + 1).getString("Start")) == localPathList.get(j + 1) && Integer.parseInt(edgeArray.getJSONObject(i + 1).getString("End")) == localPathList.get(j + 2)) {
+                                    temp += Double.parseDouble(edgeArray.getJSONObject(i + 1).getString("Distance"));
+                                    i++;
+                                    j++;
+
+                                }
+
+                            }
                             // fetch email and name and store it in arraylist
                             //stationList.add(Integer.parseInt(stationDetail.getString("ID")));
                             //connectingList.add(Integer.parseInt(stationDetail.getString("Connecting")));
                             //terminalList.add(Integer.parseInt(stationDetail.getString("Terminal")));
                             //colorList.add(stationDetail.getString("Color"));
                             //distanceList.add(Float.parseFloat(stationDetail.getString("Distance")));
-                            //Refer shanky ki copy
-
                         }
-
                     }
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
+                if(temp<sd){
+                    sd=temp;
+                    fp.clear();
+                    for(int i=0;i<localPathList.size();i++){
+                        fp.add(localPathList.get(i));
+                    }
+
+                }
+
+
 
                 // System.out.println(localPathList);
                 // if match found then no need to traverse more till depth
@@ -258,10 +277,6 @@ public class RouteActivity extends AppCompatActivity {
             isVisited[u] = false;
         }
     }
-
-
-
-
 
         public String loadJSONFromAsset(String filename) {
         String json = null;
