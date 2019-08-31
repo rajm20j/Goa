@@ -185,7 +185,7 @@ public class RouteActivity extends AppCompatActivity {
         // vertices in the current path
         private void printAllPathsUtil(Integer u, Integer d,
                                        boolean[] isVisited,
-                                       List<Integer> localPathList, ArrayList<Integer> fp, Integer sd) {
+                                       List<Integer> localPathList, ArrayList<Integer> fp, double sd) {
 
             // Mark the current node
             isVisited[u] = true;
@@ -209,8 +209,8 @@ public class RouteActivity extends AppCompatActivity {
                     JSONArray edgeArray = obj.getJSONArray("map");
                     // implement for loop for getting users list data
                     for (int j=0; j< localPathList.size()-1;j++ ) {
-                        u1= localPathList[j];
-                        v1= localPathList[j+1];
+                        u1= localPathList.get(j);
+                        v1= localPathList.get(j+1);
                         for (int i = 0; i < edgeArray.length(); i++) {
                             // create a JSONObject for fetching single user data
 
@@ -244,7 +244,7 @@ public class RouteActivity extends AppCompatActivity {
                     // store current node
                     // in path[]
                     localPathList.add(i);
-                    printAllPathsUtil(i, d, isVisited, localPathList);
+                    printAllPathsUtil(i, d, isVisited, localPathList,fp,sd);
 
                     // remove current node
                     // in path[]
