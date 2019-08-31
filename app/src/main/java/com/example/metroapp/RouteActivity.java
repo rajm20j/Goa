@@ -2,10 +2,7 @@ package com.example.metroapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import android.view.ViewDebug;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,18 +13,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
-
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.RecyclerView.LayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import android.util.Log;
 
 public class RouteActivity extends AppCompatActivity {
     //ArrayList<Integer> stationList= new ArrayList<>();
