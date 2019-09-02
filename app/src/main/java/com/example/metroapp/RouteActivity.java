@@ -2,7 +2,6 @@ package com.example.metroapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -28,6 +27,7 @@ public class RouteActivity extends AppCompatActivity {
     //HashMap<Integer,Integer> visited = new HashMap<Integer, Integer>();
 
     ArrayList <Integer> finalPath = new ArrayList<>();
+    ArrayList <String> finalPathString = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +41,6 @@ public class RouteActivity extends AppCompatActivity {
         double shortestDist = 99999999.0;
         Integer destint=0;
         Integer u1,v1,stationNo=-1;
-
-
-
 
         try {
             // get JSONObject from JSON file
@@ -96,25 +93,43 @@ public class RouteActivity extends AppCompatActivity {
 
             }
 
-
-
         } catch (JSONException e) {
            e.printStackTrace();
         }
 
         g.findpath(srcint,destint,shortestDist,finalPath);
-        EditText t1 = (EditText) findViewById(R.id.testsrcint);
-        String path="";
-        for(int i=0;i<finalPath.size();i++){
-            path+=" "+Integer.toString(finalPath.get(i));
+
+
+
+        try {
+            // get JSONObject from JSON file
+            // JSONObject obj = new JSONObject(loadJSONFromAsset("maps.json"));
+            JSONObject nameToId = new JSONObject(loadJSONFromAsset("mapid.json"));
+            // fetch JSONArray named users
+
+
+
+            JSONArray mapid = nameToId.getJSONArray("map_id");
+            for(int j=0;j<finalPath.size();j++) {
+                for (int i = 0; i < mapid.length(); i++) {
+                    JSONObject temp = mapid.getJSONObject(i);
+                    //Make all visited 0
+                    //visited.put(Integer.parseInt(temp.getString("ID")),0);
+                    if (Integer.toString(finalPath.get(j)).equals(temp.getString("ID"))) {
+                        finalPathString.add(temp.getString("Stations"));
+                    }
+                }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
-        t1.setText(path);
+
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         //  call the constructor of CustomAdapter to send the reference and data to Adapter
-        CustomAdapter customAdapter = new CustomAdapter(RouteActivity.this, finalPath);
+        CustomAdapter customAdapter = new CustomAdapter(RouteActivity.this, finalPathString);
         recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
 
 
@@ -123,7 +138,7 @@ public class RouteActivity extends AppCompatActivity {
 
 
     // A directed graph using
-// adjacency list representation
+    // adjacency list representation
     public class Graph {
 
         // No. of vertices in graph

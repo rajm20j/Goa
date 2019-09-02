@@ -14,10 +14,10 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
-    ArrayList<Integer> stationListInPath;
+    ArrayList<String> stationListInPath;
     Context context;
 
-    public CustomAdapter(Context context, ArrayList<Integer> stationListInPath) {
+    public CustomAdapter(Context context, ArrayList<String> stationListInPath) {
         this.context = context;
         this.stationListInPath = stationListInPath;
     }
@@ -33,7 +33,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         // set the data in items
-        holder.station.setText(stationListInPath.get(position)+"");
+        holder.station.setText(stationListInPath.get(position));
        // holder.distance.setText(distanceList.get(position));
         // implement setOnClickListener event on item view.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
