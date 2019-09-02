@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,9 +42,7 @@ public class RouteActivity extends AppCompatActivity {
         Integer destint=0;
         Integer u1,v1,stationNo=-1;
 
-       // RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        //LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
-        // recyclerView.setLayoutManager(linearLayoutManager);
+
 
 
         try {
@@ -110,11 +110,13 @@ public class RouteActivity extends AppCompatActivity {
         }
         t1.setText(path);
 
-
-
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
         //  call the constructor of CustomAdapter to send the reference and data to Adapter
-        //CustomAdapter customAdapter = new CustomAdapter(RouteActivity.this, stationList, connectingList, terminalList, colorList);
-        //recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
+        CustomAdapter customAdapter = new CustomAdapter(RouteActivity.this, finalPath);
+        recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
+
 
     }
 
@@ -279,5 +281,6 @@ public class RouteActivity extends AppCompatActivity {
         }
         return json;
     }
+
 }
 
